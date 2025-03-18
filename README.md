@@ -63,6 +63,29 @@ This project provides two setup scripts - one for Unix-based systems (macOS, Lin
    npm run dev
    ```
 
+## Implementing with Cursor
+
+This template is designed to work with the Cursor IDE and its AI agent (composer). To get started:
+1. **Run with Cursor Composer**
+   - Open Cursor IDE
+   - Press `Cmd + I` (Mac) or `Ctrl + I` (Windows/Linux) to open the Cursor Composer
+     - modify the chat mode to 'Agent': ![screenshot](./agent_toggle.png)
+   - Add both `.cursor/rules/base.mdc` and `.cursor/tasks/init.md` to the composer context
+   - Use the following prompt:
+     ```
+     Go through each task in the init.md file. After you complete each task,
+     update the file to check off any task. Run builds and commits after each task.
+     Continue with each task until you have checked off each one. After each story,
+     do not take a screenshot. If you need more detail about a task, you can gather
+     relevant files and pass the FULL file to the research agent.
+     ```
+
+2. **Monitor Progress**
+   - The agent will work through each task in order
+   - Tasks will be checked off automatically as they're completed
+   - Commits will be made after each task
+   - You can monitor progress in the cursor-tasks.md file
+
 ## Database Setup
 
 After setting up your Supabase project, you'll need to create the necessary tables and seed data:
