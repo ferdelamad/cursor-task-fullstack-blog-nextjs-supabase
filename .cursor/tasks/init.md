@@ -6,7 +6,7 @@ Run through each task step by step. After completing each task, mark it as compl
 
 Suggested prompt to use with the cursor agent:
 ``` txt
-Go through each task in the .cursor-tasks file. After you complete each task, update the file to check off any task. Run builds and commits after each task. Continue with each task until you have checked off each one. After each story, do not take a screenshot. If you need more detail about a task, you can gather relevant files and pass the FULL file to the research agent.
+Go through each task in the init.d file. After you complete each task, update the file to check off any task. Run builds and commits after each task. Continue with each task until you have checked off each one. After each story, do not take a screenshot. If you need more detail about a task, you can gather relevant files and pass the FULL file to the research agent.
 ```
 
 ## 1. Project Setup
